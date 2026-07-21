@@ -75,6 +75,7 @@ async function initDondrs() {
     await Promise.all([
       loadStyle('styles/animations.css'),
       loadStyle('styles/buttons.css'),
+      loadStyle('styles/video.css'),
 
       // Swiper standaard styling
       loadStyle(
@@ -153,6 +154,7 @@ async function initDondrs() {
     await loadScript('scripts/navbar.js');
     await loadScript('scripts/animations.js');
     await loadScript('scripts/swiper.js');
+    await loadScript('scripts/video.js');
 
     // Deze als laatste, omdat hier Barba wordt gestart
     await loadScript('scripts/pagetransitions.js');
